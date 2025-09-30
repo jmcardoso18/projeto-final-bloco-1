@@ -3,6 +3,8 @@ package projeto_final_bloco_1;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import projeto_final_bloco_1.model.Acessorios;
+import projeto_final_bloco_1.model.Higiene;
 import projeto_final_bloco_1.util.Cores;
 
 public class Menu {
@@ -21,6 +23,10 @@ public class Menu {
 		private static final int SAIR = 0;
 
 		public static void main(String[] args) {
+			//Testar produto
+			
+			Acessorios a1 = new Acessorios(1,1,"Coleira",10,10.2f,"Número 9");
+			Higiene h1 = new Higiene(2,2,"Creme dental",12,20.3f,"Cães");
 			// Declarando a variável
 			int opcao = 1;// Opcão inicia com 1 porque escolhi a variável 0 para sair do menu
 
@@ -51,6 +57,8 @@ public class Menu {
 				
 				case LISTAR_TODOS_PRODUTOS:
 					System.out.println("Listar todos os produtos");
+					a1.visualizar();
+					h1.visualizar();
 					keyPress();
 					break;
 
