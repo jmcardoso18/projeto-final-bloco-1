@@ -43,11 +43,11 @@ public abstract class Produto {
 		this.quantidadeEstoque = quantidadeEstoque;
 	}
 
-	public int getTipo() {
+	public int getCategoria() {
 		return categoria;
 	}
 
-	public void setTipo(int categoria) {
+	public void setCategoria(int categoria) {
 		this.categoria = categoria;
 	}
 	
